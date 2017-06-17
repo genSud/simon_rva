@@ -1,2 +1,2 @@
 # simon_rva
-Чат бот для телеграма
+Различные исходники для [чата](https://t.me/joinchat/AAAAAA5UljoJ1TmvpmPJ2Q) Саймона в Telegram

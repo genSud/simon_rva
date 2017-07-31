@@ -116,7 +116,7 @@ def repeat_all_messages(message):
 		try:
 			words = message.text.replace('/en ', '')
 			headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0'}
-			req = urllib.request.Request("https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170722T083707Z.7a142cb8736b4685.b90438644d5615afe82cfef66459c7001d21bc0b&text=" + 
+			req = urllib.request.Request("https://translate.yandex.net/api/v1.5/tr.json/translate?key=yandex_key_here&text=" + 
 				urllib.parse.quote_plus(words) + "&lang=ru", headers=headers)
 			content = urllib.request.urlopen(req).read().decode("utf-8", "ignore")
 			content = json.loads(content)
@@ -131,7 +131,7 @@ def repeat_all_messages(message):
 		try:
 			words = message.text.replace('/ru ', '')
 			headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0'}
-			req = urllib.request.Request("https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170722T083707Z.7a142cb8736b4685.b90438644d5615afe82cfef66459c7001d21bc0b&text=" + 
+			req = urllib.request.Request("https://translate.yandex.net/api/v1.5/tr.json/translate?key=yandex_key_here&text=" + 
 				urllib.parse.quote_plus(words) + "&lang=en", headers=headers)
 			content = urllib.request.urlopen(req).read().decode("utf-8", "ignore")
 			content = json.loads(content)
